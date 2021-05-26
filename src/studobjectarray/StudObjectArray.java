@@ -17,13 +17,13 @@ public class StudObjectArray {
    
     public static void main(String[] args) {
         Student[] studList=new Student[5];
-        Scanner input=new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);
         
         for(int i=0;i<studList.length;i++)
         {
             studList[i]=new Student();
             System.out.println("Enter Student name: ");
-            studList[i].setName(input.nextLine());
+            studList[i].setName(sc.nextLine());
         }
         
         for(int i=0;i<studList.length;i++)
